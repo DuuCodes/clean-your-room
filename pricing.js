@@ -18,6 +18,7 @@ module.exports.calculateProductPrice = function (product, employee, coverageLeve
       }
 
       return parseInt(price * 100) / 100
+    
     case 'ltd':
       var salaryPercentage = product.coveragePercentage / 100
 
@@ -34,4 +35,4 @@ module.exports.calculateProductPrice = function (product, employee, coverageLeve
     default:
       return 0
   }
-}
+} 
